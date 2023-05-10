@@ -1,0 +1,9 @@
+body{
+    background-color: rgb(186, 173, 155);
+}
+#crud textarea{
+    resize: none;
+}
+span {
+    background-color: rgb(236, 236, 85);
+}

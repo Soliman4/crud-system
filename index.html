@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>  
+        <!-- crud --> 
+        <!-- 
+            Create  - Read -  Update - Delete
+        -->
+        <div id="crud" class="w-50 m-auto"> 
+            <h1>CRUD System</h1>
+                <label for="prod" class="my-4">proudctName:</label>
+                <input type="text" class="form-control" id="prod">
+                <label for="cate" class="my-4">proudctCategory:</label>
+                <input type="text" class="form-control" id="cate">
+                <label for="pricee" class="my-4">proudctPrice:</label>
+                <input type="number" class="form-control" id="pricee">
+                <label for="desc" class="my-4">proudctDescription:</label>
+                <textarea id="desc" class="form-control" id="" cols="30" rows="7"></textarea>
+                <button id=" button" onclick="addProduct()" class="btn btn-outline-danger btn-lg my-4">Add</button>
+        </div>
+        <div class="w-75 m-auto my-5 shadow">
+            <input id="searchInput" onkeyup="search()" class="form-control w-25 mx-auto" type = "text" placeholder = "Search">
+            <table class="table table-striped table-hover text-center small"> 
+                <thead>
+                    <th>index</th>
+                    <th>name</th>
+                    <th>category</th>
+                    <th>price</th>
+                    <th>description</th>
+                    <th>delete</th>
+                    <th>update</th>
+                </thead>
+                <tbody id="joo">
+                </tbody>
+            </table>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html> 
